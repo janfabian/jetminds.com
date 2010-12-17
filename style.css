@@ -1,0 +1,1866 @@
+/*
+Theme Name: We are JetMinds!
+Description: Template for new JetMinds blog
+Author: Jan Fabian
+Version: 1.0
+*
+
+*
+*/
+/* line 4, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 65, css/src/style.scss */
+.headline, .gray-stripe #container .featured-article .headline, .info-gray-stripe #container .info a, .content #container .product .product-name, .content #container .current-article .about-the-author .more-from-author a, .content #container .current-article ul li .article-title, .content #container .articles .article .title a, .content #container .archive-articles .article .title a, .content #container .users .article .title a, .content #container .side-bar ul a {
+  color: #97151c;
+  text-decoration: none;
+}
+/* line 68, css/src/style.scss */
+.headline:hover, .gray-stripe #container .featured-article .headline:hover, .info-gray-stripe #container .info a:hover, .info-gray-stripe .content #container .articles .article .info .author:hover, .content .info-gray-stripe #container .articles .article .info .author:hover, .info-gray-stripe .content #container .archive-articles .article .info .author:hover, .content .info-gray-stripe #container .archive-articles .article .info .author:hover, .info-gray-stripe .content #container .users .article .info .author:hover, .content .info-gray-stripe #container .users .article .info .author:hover, .content #container .product .product-name:hover, .content #container .current-article .about-the-author .more-from-author a:hover, .content #container .current-article .about-the-author .more-from-author .articles .article .info .author:hover, .content #container .articles .article .info .current-article .about-the-author .more-from-author .author:hover, .content #container .current-article .about-the-author .more-from-author .archive-articles .article .info .author:hover, .content #container .archive-articles .article .info .current-article .about-the-author .more-from-author .author:hover, .content #container .current-article .about-the-author .more-from-author .users .article .info .author:hover, .content #container .users .article .info .current-article .about-the-author .more-from-author .author:hover, .content #container .current-article ul li .article-title:hover, .content #container .articles .article .title a:hover, .content #container .archive-articles .article .title a:hover, .content #container .users .article .title a:hover, .content #container .articles .article .title .info .author:hover, .content #container .articles .article .info .title .author:hover, .content #container .archive-articles .articles .article .title .info .author:hover, .content #container .articles .archive-articles .article .title .info .author:hover, .content #container .archive-articles .articles .article .info .title .author:hover, .content #container .articles .archive-articles .article .info .title .author:hover, .content #container .users .articles .article .title .info .author:hover, .content #container .articles .users .article .title .info .author:hover, .content #container .users .articles .article .info .title .author:hover, .content #container .articles .users .article .info .title .author:hover, .content #container .archive-articles .article .title .info .author:hover, .content #container .archive-articles .article .info .title .author:hover, .content #container .users .archive-articles .article .title .info .author:hover, .content #container .archive-articles .users .article .title .info .author:hover, .content #container .users .archive-articles .article .info .title .author:hover, .content #container .archive-articles .users .article .info .title .author:hover, .content #container .users .article .title .info .author:hover, .content #container .users .article .info .title .author:hover, .content #container .side-bar ul a:hover, .content #container .side-bar ul .articles .article .info .author:hover, .content #container .articles .article .info .side-bar ul .author:hover, .content #container .side-bar ul .archive-articles .article .info .author:hover, .content #container .archive-articles .article .info .side-bar ul .author:hover, .content #container .side-bar ul .users .article .info .author:hover, .content #container .users .article .info .side-bar ul .author:hover {
+  color: #4d0106;
+}
+
+/* line 73, css/src/style.scss */
+.white-board-font, .gray-stripe #container .photos-of-jetminds .photo-frame .photo-name, .content #container .right-menubar .table-border .white-table, .content #container .right-menubar .table-border .white-table h3 {
+  font-family: 'Reenie Beanie', serif;
+  font-style: normal;
+  text-shadow: none;
+  text-decoration: none;
+  line-height: 1.11em;
+}
+
+/* line 81, css/src/style.scss */
+img#wpstats {
+  display: none;
+}
+
+/* line 83, css/src/style.scss */
+body {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 75%;
+  font-size: 0.9em;
+  background-color: #222;
+}
+/* line 65, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: normal;
+  color: #222222;
+}
+/* line 66, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h1 img, body h2 img, body h3 img, body h4 img, body h5 img, body h6 img {
+  margin: 0;
+}
+/* line 67, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+/* line 68, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+/* line 69, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+/* line 70, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+/* line 71, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+/* line 72, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 73, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body p {
+  margin: 0 0 1.5em;
+}
+/* line 74, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body p img.left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+/* line 75, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body p img.right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+/* line 77, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body a {
+  text-decoration: underline;
+  color: #000099;
+}
+/* line 18, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:visited {
+  color: #000066;
+}
+/* line 21, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:focus {
+  color: black;
+}
+/* line 24, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:hover, body .content #container .articles .article .info .author:hover, .content #container .articles .article .info body .author:hover, body .content #container .archive-articles .article .info .author:hover, .content #container .archive-articles .article .info body .author:hover, body .content #container .users .article .info .author:hover, .content #container .users .article .info body .author:hover {
+  color: black;
+}
+/* line 27, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:active {
+  color: #cc0099;
+}
+/* line 78, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+/* line 79, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body strong {
+  font-weight: bold;
+}
+/* line 80, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body em {
+  font-style: italic;
+}
+/* line 81, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body dfn {
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 82, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body sup, body sub {
+  line-height: 0;
+}
+/* line 83, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body abbr, body acronym {
+  border-bottom: 1px dotted #666666;
+}
+/* line 84, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+/* line 85, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body del {
+  color: #666666;
+}
+/* line 86, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+/* line 87, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body pre, body code, body tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+/* line 88, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body li ul, body li ol {
+  margin: 0;
+}
+/* line 89, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body ul, body ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+/* line 90, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body ul {
+  list-style-type: disc;
+}
+/* line 91, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body ol {
+  list-style-type: decimal;
+}
+/* line 92, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body dl {
+  margin: 0 0 1.5em 0;
+}
+/* line 93, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body dl dt {
+  font-weight: bold;
+}
+/* line 94, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body dd {
+  margin-left: 1.5em;
+}
+/* line 95, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+/* line 96, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body th {
+  font-weight: bold;
+}
+/* line 97, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body thead th {
+  background: #c3d9ff;
+}
+/* line 98, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body th, body td, body caption {
+  padding: 4px 10px 4px 5px;
+}
+/* line 99, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body tr.even td {
+  background: #e5ecf9;
+}
+/* line 100, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body tfoot {
+  font-style: italic;
+}
+/* line 101, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body caption {
+  background: #eeeeee;
+}
+/* line 102, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body .quiet {
+  color: #666666;
+}
+/* line 103, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body .loud {
+  color: #111111;
+}
+/* line 9, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .clear {
+  clear: both;
+}
+/* line 12, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .nowrap {
+  white-space: nowrap;
+}
+/* line 16, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 18, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .small {
+  font-size: 0.8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+/* line 22, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+/* line 26, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .first {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 29, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .last {
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 32, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .top {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 35, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body .bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 8, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
+body .showgrid {
+  background: url('/images/grid.png?1291288346');
+}
+/* line 4, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .error {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fbe3e4;
+  color: #8a1f11;
+  border-color: #fbc2c4;
+}
+/* line 29, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .error a {
+  color: #8a1f11;
+}
+/* line 6, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .notice {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fff6bf;
+  color: #514721;
+  border-color: #ffd324;
+}
+/* line 37, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .notice a {
+  color: #514721;
+}
+/* line 8, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .success {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+}
+/* line 45, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .success a {
+  color: #264409;
+}
+/* line 10, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .hide {
+  display: none;
+}
+/* line 12, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .highlight {
+  background: yellow;
+}
+/* line 14, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .added {
+  background: #006600;
+  color: white;
+}
+/* line 16, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .removed {
+  background: #990000;
+  color: white;
+}
+
+/*top red gradient*/
+/* line 95, css/src/style.scss */
+.red-gradient {
+  background-image: url("img/red-gradient.gif");
+  background-repeat: repeat-x;
+}
+/* line 98, css/src/style.scss */
+.red-gradient #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 10px;
+}
+/* line 101, css/src/style.scss */
+.red-gradient #container .vertical-menu-prepend {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+  height: 10px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .red-gradient #container .vertical-menu-prepend {
+  overflow-x: hidden;
+}
+/* line 105, css/src/style.scss */
+.red-gradient #container .vertical-menu {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  height: 10px;
+  background-color: #111;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .red-gradient #container .vertical-menu {
+  overflow-x: hidden;
+}
+
+/*white stripe with logo*/
+/* line 114, css/src/style.scss */
+.white-stripe {
+  background-color: #FFF;
+}
+/* line 116, css/src/style.scss */
+.white-stripe #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 119, css/src/style.scss */
+.white-stripe #container .logo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  padding: 20px 0px 10px 0px;
+  font-family: "Trebuchet MS";
+  font-size: 3em;
+  line-height: 2.4em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .white-stripe #container .logo {
+  overflow-x: hidden;
+}
+/* line 121, css/src/style.scss */
+.white-stripe #container .logo a {
+  text-decoration: none;
+}
+/* line 124, css/src/style.scss */
+.white-stripe #container .logo img {
+  float: left;
+  margin-right: 25px;
+}
+/* line 134, css/src/style.scss */
+.white-stripe #container .logo .red {
+  color: #97151c;
+}
+/* line 135, css/src/style.scss */
+.white-stripe #container .logo .gray {
+  color: #1d1d1d;
+}
+/* line 137, css/src/style.scss */
+.white-stripe #container .vertical-menu-prepend {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  height: 1px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .white-stripe #container .vertical-menu-prepend {
+  overflow-x: hidden;
+}
+/* line 141, css/src/style.scss */
+.white-stripe #container .vertical-menu {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  background-color: #1e1e1e;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .white-stripe #container .vertical-menu {
+  overflow-x: hidden;
+}
+/* line 144, css/src/style.scss */
+.white-stripe #container .vertical-menu ul {
+  float: left;
+  list-style-type: none;
+  padding: 0.5em 1.4em;
+  margin: 0em 0em 0.5em 0em;
+  text-shadow: black 1px 1px 1px;
+  text-transform: uppercase;
+}
+/* line 151, css/src/style.scss */
+.white-stripe #container .vertical-menu ul li {
+  padding: 0.3em 0em;
+}
+/* line 153, css/src/style.scss */
+.white-stripe #container .vertical-menu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  color: #a3a3a3;
+  text-decoration: none;
+}
+/* line 158, css/src/style.scss */
+.white-stripe #container .vertical-menu ul li a:hover, .white-stripe .content #container .vertical-menu ul li .articles .article .info .author:hover, .content .white-stripe #container .vertical-menu ul li .articles .article .info .author:hover, .white-stripe .content #container .articles .article .info .vertical-menu ul li .author:hover, .content .white-stripe #container .articles .article .info .vertical-menu ul li .author:hover, .white-stripe .content #container .vertical-menu ul li .archive-articles .article .info .author:hover, .content .white-stripe #container .vertical-menu ul li .archive-articles .article .info .author:hover, .white-stripe .content #container .archive-articles .article .info .vertical-menu ul li .author:hover, .content .white-stripe #container .archive-articles .article .info .vertical-menu ul li .author:hover, .white-stripe .content #container .vertical-menu ul li .users .article .info .author:hover, .content .white-stripe #container .vertical-menu ul li .users .article .info .author:hover, .white-stripe .content #container .users .article .info .vertical-menu ul li .author:hover, .content .white-stripe #container .users .article .info .vertical-menu ul li .author:hover {
+  color: white;
+  text-shadow: #333333 0px 0px 2px;
+}
+
+/*red stripe with quotation about JetMinds*/
+/* line 170, css/src/style.scss */
+.red-stripe {
+  background-color: #97151c;
+  border-bottom-width: 11px;
+  border-bottom-color: #84151b;
+  border-bottom-style: solid;
+}
+/* line 177, css/src/style.scss */
+.red-stripe #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 0.5em;
+}
+/* line 180, css/src/style.scss */
+.red-stripe #container .vertical-menu-prepend {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+  height: 1px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .red-stripe #container .vertical-menu-prepend {
+  overflow-x: hidden;
+}
+/* line 184, css/src/style.scss */
+.red-stripe #container .vertical-menu {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  background-image: url("img/vertical-menu-bottom.png");
+  background-repeat: no-repeat;
+  height: 32px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .red-stripe #container .vertical-menu {
+  overflow-x: hidden;
+}
+/* line 190, css/src/style.scss */
+.red-stripe #container h2.quotation, .red-stripe #container h2.headline-title {
+  font-size: 2.3em;
+  text-shadow: #4d0106 0px 0px 5px;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+/* line 199, css/src/style.scss */
+.red-stripe #container h2.headline-title {
+  font-size: 1.5em;
+  margin-bottom: 0.1em;
+}
+/* line 203, css/src/style.scss */
+.red-stripe #container h2.headline-title a {
+  color: white;
+  text-decoration: none;
+}
+/* line 208, css/src/style.scss */
+.red-stripe #container span.author-of-quotation {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #4d0106;
+}
+
+/*gray stripe with featured article and photos from JetMinds life*/
+/* line 219, css/src/style.scss */
+.gray-stripe {
+  background-color: #ececec;
+  padding: 20px 0px;
+}
+/* line 222, css/src/style.scss */
+.gray-stripe #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 226, css/src/style.scss */
+.gray-stripe #container .featured-article {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+  padding-right: 40px;
+  background-image: url("img/vertical-border.gif");
+  background-repeat: repeat-y;
+  background-position: top right;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .gray-stripe #container .featured-article {
+  overflow-x: hidden;
+}
+/* line 234, css/src/style.scss */
+.gray-stripe #container .featured-article h3 {
+  font-size: 1em;
+  margin: 0px;
+}
+/* line 235, css/src/style.scss */
+.gray-stripe #container .featured-article .headline, .gray-stripe #container .featured-article .headline, .gray-stripe .info-gray-stripe #container .featured-article .info a, .info-gray-stripe .gray-stripe #container .featured-article .info a, .gray-stripe .info-gray-stripe #container .info .featured-article a, .info-gray-stripe .gray-stripe #container .info .featured-article a, .gray-stripe .content #container .featured-article .product .product-name, .content .gray-stripe #container .featured-article .product .product-name, .gray-stripe .content #container .product .featured-article .product-name, .content .gray-stripe #container .product .featured-article .product-name, .gray-stripe .content #container .featured-article .current-article .about-the-author .more-from-author a, .content .gray-stripe #container .featured-article .current-article .about-the-author .more-from-author a, .gray-stripe .content #container .current-article .about-the-author .more-from-author .featured-article a, .content .gray-stripe #container .current-article .about-the-author .more-from-author .featured-article a, .gray-stripe .content #container .featured-article .current-article ul li .article-title, .content .gray-stripe #container .featured-article .current-article ul li .article-title, .gray-stripe .content #container .current-article ul li .featured-article .article-title, .content .gray-stripe #container .current-article ul li .featured-article .article-title, .gray-stripe .content #container .featured-article .articles .article .title a, .content .gray-stripe #container .featured-article .articles .article .title a, .gray-stripe .content #container .articles .article .title .featured-article a, .content .gray-stripe #container .articles .article .title .featured-article a, .gray-stripe .content #container .featured-article .archive-articles .article .title a, .content .gray-stripe #container .featured-article .archive-articles .article .title a, .gray-stripe .content #container .archive-articles .article .title .featured-article a, .content .gray-stripe #container .archive-articles .article .title .featured-article a, .gray-stripe .content #container .featured-article .users .article .title a, .content .gray-stripe #container .featured-article .users .article .title a, .gray-stripe .content #container .users .article .title .featured-article a, .content .gray-stripe #container .users .article .title .featured-article a, .gray-stripe .content #container .featured-article .side-bar ul a, .content .gray-stripe #container .featured-article .side-bar ul a, .gray-stripe .content #container .side-bar ul .featured-article a, .content .gray-stripe #container .side-bar ul .featured-article a {
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+/* line 240, css/src/style.scss */
+.gray-stripe #container .featured-article .alt {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+/* line 243, css/src/style.scss */
+.gray-stripe #container .featured-article .alt a {
+  color: #7479a8;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
+/* line 247, css/src/style.scss */
+.gray-stripe #container .featured-article .alt a:hover, .gray-stripe .content #container .featured-article .alt .articles .article .info .author:hover, .content .gray-stripe #container .featured-article .alt .articles .article .info .author:hover, .gray-stripe .content #container .articles .article .info .featured-article .alt .author:hover, .content .gray-stripe #container .articles .article .info .featured-article .alt .author:hover, .gray-stripe .content #container .featured-article .alt .archive-articles .article .info .author:hover, .content .gray-stripe #container .featured-article .alt .archive-articles .article .info .author:hover, .gray-stripe .content #container .archive-articles .article .info .featured-article .alt .author:hover, .content .gray-stripe #container .archive-articles .article .info .featured-article .alt .author:hover, .gray-stripe .content #container .featured-article .alt .users .article .info .author:hover, .content .gray-stripe #container .featured-article .alt .users .article .info .author:hover, .gray-stripe .content #container .users .article .info .featured-article .alt .author:hover, .content .gray-stripe #container .users .article .info .featured-article .alt .author:hover {
+  color: #1d1d1d;
+}
+/* line 249, css/src/style.scss */
+.gray-stripe #container .featured-article .alt .author {
+  float: right;
+}
+/* line 253, css/src/style.scss */
+.gray-stripe #container .featured-article .text {
+  text-align: justify;
+  text-indent: 2em;
+}
+/* line 256, css/src/style.scss */
+.gray-stripe #container .featured-article .text p {
+  margin-bottom: 1em;
+}
+/* line 257, css/src/style.scss */
+.gray-stripe #container .featured-article .text .more-link {
+  text-indent: 0em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  float: right;
+  color: white;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+/* line 260, css/src/style.scss */
+.gray-stripe #container .featured-article .text .more-link:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  float: right;
+}
+/* line 269, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px;
+  padding: 5px 5px 0px 35px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .gray-stripe #container .photos-of-jetminds {
+  overflow-x: hidden;
+}
+/* line 272, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame {
+  width: 420px;
+  padding: 10px;
+  margin-bottom: 0.8em;
+  background-color: #FFF;
+  -moz-box-shadow: #999999 0px 5px 5px 0;
+  -webkit-box-shadow: #999999 0px 5px 5px 0;
+  -o-box-shadow: #999999 0px 5px 5px 0;
+  box-shadow: #999999 0px 5px 5px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 280, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame .photo-name {
+  margin-top: 0.3em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1d1d1d;
+}
+/* line 288, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame .photo {
+  line-height: 0px;
+  height: 250px;
+  overflow: hidden;
+}
+/* line 292, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame .photo .hidden {
+  display: none;
+}
+/* line 295, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame .photo .text {
+  position: absolute;
+  margin-top: -8em;
+  padding: 1em 10px 0em 10px;
+  background-image: url("img/black-dot.png");
+  height: 1.2em;
+  width: 400px;
+  color: white;
+  text-shadow: black 1px 1px 1px;
+}
+/* line 305, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .photo-frame .photo img {
+  margin-top: 0em;
+  margin-left: -3em;
+}
+/* line 311, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .switchers {
+  margin-top: 10px;
+  margin-right: -16.5px;
+}
+/* line 316, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .switchers .switch {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  width: 13px;
+  height: 13px;
+  background-color: #dbdbdb;
+  float: right;
+  margin-right: 6.5px;
+}
+/* line 324, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .switchers .switch:hover {
+  background-color: #1d1d1d;
+}
+/* line 327, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .switchers .switch:last {
+  margin-right: 0px;
+}
+/* line 331, css/src/style.scss */
+.gray-stripe #container .photos-of-jetminds .switchers .active {
+  background-color: #1d1d1d;
+}
+
+/*gray stripe with information about article*/
+/* line 340, css/src/style.scss */
+.info-gray-stripe {
+  color: #666666;
+  font-family: Georgia, "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+  background-color: #ececec;
+  padding: 0.5em;
+}
+/* line 344, css/src/style.scss */
+.info-gray-stripe #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/*stripe with content - i.e. projects, recent articles, JetMinds in numbers*/
+/* line 355, css/src/style.scss */
+.content {
+  background-color: #FFF;
+  padding: 0.5em 0em 5em 0em;
+}
+/* line 357, css/src/style.scss */
+.content .section-name {
+  color: #6a6a6a;
+  text-transform: uppercase;
+}
+/* line 362, css/src/style.scss */
+.content #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 364, css/src/style.scss */
+.content #container .product {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+  padding-right: 40px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .product {
+  overflow-x: hidden;
+}
+/* line 369, css/src/style.scss */
+.content #container .product[last] {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+  padding-right: 0px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .product[last] {
+  overflow-x: hidden;
+}
+/* line 373, css/src/style.scss */
+.content #container .product .product-name {
+  text-decoration: none;
+  font-size: 1.4em;
+}
+/* line 378, css/src/style.scss */
+.content #container .product .image {
+  line-height: 0px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #dbdbdb;
+}
+/* line 384, css/src/style.scss */
+.content #container .product .text {
+  font-size: 0.8em;
+}
+/* line 391, css/src/style.scss */
+.content #container .current-article {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+  padding-right: 0px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .current-article {
+  overflow-x: hidden;
+}
+/* line 394, css/src/style.scss */
+.content #container .current-article p {
+  text-indent: 2em;
+}
+/* line 397, css/src/style.scss */
+.content #container .current-article .quotation {
+  color: #666666;
+  font-family: Georgia, "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+  padding: 1em 3em;
+  margin: 1em 0em;
+  background-image: url("img/quotation.png");
+  background-repeat: no-repeat;
+}
+/* line 406, css/src/style.scss */
+.content #container .current-article img {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-right: 1em;
+}
+/* line 409, css/src/style.scss */
+.content #container .current-article img:hover {
+  -moz-box-shadow: #999999 0px 0px 5px 0;
+  -webkit-box-shadow: #999999 0px 0px 5px 0;
+  -o-box-shadow: #999999 0px 0px 5px 0;
+  box-shadow: #999999 0px 0px 5px 0;
+}
+/* line 411, css/src/style.scss */
+.content #container .current-article .important {
+  text-align: justify;
+  margin: 1em 0.5em;
+  padding: 1.5em 2em;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff4ac), color-stop(100%, #ffee80));
+  background-image: -moz-linear-gradient(top, #fff4ac 0%, #ffee80 100%);
+  background-image: linear-gradient(top, #fff4ac 0%, #ffee80 100%);
+  -moz-box-shadow: #dedede 0px 5px 5px 0;
+  -webkit-box-shadow: #dedede 0px 5px 5px 0;
+  -o-box-shadow: #dedede 0px 5px 5px 0;
+  box-shadow: #dedede 0px 5px 5px 0;
+}
+/* line 419, css/src/style.scss */
+.content #container .current-article .code {
+  margin: 5em;
+}
+/* line 422, css/src/style.scss */
+.content #container .current-article h1, .content #container .current-article h2, .content #container .current-article h3, .content #container .current-article h4, .content #container .current-article h5 {
+  font-size: 1.3em;
+}
+/* line 426, css/src/style.scss */
+.content #container .current-article ul li {
+  margin-bottom: 0.5em;
+}
+/* line 430, css/src/style.scss */
+.content #container .current-article .about-the-author {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  background-color: #f6f6f6;
+  padding: 1em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .current-article .about-the-author {
+  overflow-x: hidden;
+}
+/* line 438, css/src/style.scss */
+.content #container .current-article .about-the-author .section-name {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+/* line 442, css/src/style.scss */
+.content #container .current-article .about-the-author .icon {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 110px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .current-article .about-the-author .icon {
+  overflow-x: hidden;
+}
+/* line 445, css/src/style.scss */
+.content #container .current-article .about-the-author .text {
+  color: #666666;
+  font-family: Georgia, "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+  text-align: justify;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .current-article .about-the-author .text {
+  overflow-x: hidden;
+}
+/* line 449, css/src/style.scss */
+.content #container .current-article .about-the-author .text h4 {
+  margin-bottom: 0.5em;
+}
+/* line 451, css/src/style.scss */
+.content #container .current-article .about-the-author .more-from-author {
+  margin-top: 1em;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 456, css/src/style.scss */
+.content #container .current-article .about-the-author .more-from-author a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-size: 0.8em;
+}
+/* line 463, css/src/style.scss */
+.content #container .current-article .section-name {
+  font-size: 1.2em;
+}
+/* line 472, css/src/style.scss */
+.content #container .right-menubar {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .right-menubar {
+  overflow-x: hidden;
+}
+/* line 476, css/src/style.scss */
+.content #container .right-menubar .table-border {
+  float: right;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #ececec;
+  padding: 7px;
+}
+/* line 481, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table {
+  float: right;
+  -moz-box-shadow: #cecece 0px 0px 5px 0 inset;
+  -webkit-box-shadow: #cecece 0px 0px 5px 0 inset;
+  -o-box-shadow: #cecece 0px 0px 5px 0 inset;
+  box-shadow: #cecece 0px 0px 5px 0 inset;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #FFF;
+  font-size: 2em;
+  padding: 0.5em;
+  background-image: url("img/whiteboard.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+/* line 495, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table ul {
+  padding: 0em 0.4em;
+  list-style-type: none;
+}
+/* line 500, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table a {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+  color: #000099;
+}
+/* line 504, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table a:hover, .content #container .right-menubar .table-border .white-table .articles .article .info .author:hover, .content #container .articles .article .info .right-menubar .table-border .white-table .author:hover, .content #container .right-menubar .table-border .white-table .archive-articles .article .info .author:hover, .content #container .archive-articles .article .info .right-menubar .table-border .white-table .author:hover, .content #container .right-menubar .table-border .white-table .users .article .info .author:hover, .content #container .users .article .info .right-menubar .table-border .white-table .author:hover {
+  color: #97151c;
+}
+/* line 506, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+  font-size: 1em;
+}
+/* line 512, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table .category {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 130px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .right-menubar .table-border .white-table .category {
+  overflow-x: hidden;
+}
+/* line 515, css/src/style.scss */
+.content #container .right-menubar .table-border .white-table .tags {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 130px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .right-menubar .table-border .white-table .tags {
+  overflow-x: hidden;
+}
+/* line 522, css/src/style.scss */
+.content #container .articles, .content #container .archive-articles, .content #container .users {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+  padding-right: 40px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .articles, * html .content #container .archive-articles, * html .content #container .users {
+  overflow-x: hidden;
+}
+/* line 526, css/src/style.scss */
+.content #container .articles .article, .content #container .archive-articles .article, .content #container .users .article {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
+  padding-left: 40px;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dbdbdb;
+  background-image: url("img/star.png");
+  background-repeat: no-repeat;
+  background-position: 0em 0.4em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .articles .article, * html .content #container .archive-articles .article, * html .content #container .users .article {
+  overflow-x: hidden;
+}
+/* line 538, css/src/style.scss */
+.content #container .articles .article .title h3, .content #container .archive-articles .article .title h3, .content #container .users .article .title h3 {
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  margin-top: 0.2em;
+}
+/* line 543, css/src/style.scss */
+.content #container .articles .article .title a, .content #container .archive-articles .article .title a, .content #container .users .article .title a {
+  font-size: 1.2em;
+}
+/* line 546, css/src/style.scss */
+.content #container .articles .article .title a:hover, .content #container .archive-articles .article .title a:hover, .content #container .users .article .title a:hover, .content #container .articles .article .title .info .author:hover, .content #container .articles .article .info .title .author:hover, .content #container .archive-articles .articles .article .title .info .author:hover, .content #container .articles .archive-articles .article .title .info .author:hover, .content #container .archive-articles .articles .article .info .title .author:hover, .content #container .articles .archive-articles .article .info .title .author:hover, .content #container .users .articles .article .title .info .author:hover, .content #container .articles .users .article .title .info .author:hover, .content #container .users .articles .article .info .title .author:hover, .content #container .articles .users .article .info .title .author:hover, .content #container .articles .archive-articles .article .title .info .author:hover, .content #container .archive-articles .articles .article .title .info .author:hover, .content #container .articles .archive-articles .article .info .title .author:hover, .content #container .archive-articles .articles .article .info .title .author:hover, .content #container .archive-articles .article .title .info .author:hover, .content #container .archive-articles .article .info .title .author:hover, .content #container .users .archive-articles .article .title .info .author:hover, .content #container .archive-articles .users .article .title .info .author:hover, .content #container .users .archive-articles .article .info .title .author:hover, .content #container .archive-articles .users .article .info .title .author:hover, .content #container .articles .users .article .title .info .author:hover, .content #container .users .articles .article .title .info .author:hover, .content #container .articles .users .article .info .title .author:hover, .content #container .users .articles .article .info .title .author:hover, .content #container .archive-articles .users .article .title .info .author:hover, .content #container .users .archive-articles .article .title .info .author:hover, .content #container .archive-articles .users .article .info .title .author:hover, .content #container .users .archive-articles .article .info .title .author:hover, .content #container .users .article .title .info .author:hover, .content #container .users .article .info .title .author:hover {
+  text-decoration: underline;
+}
+/* line 549, css/src/style.scss */
+.content #container .articles .article .info, .content #container .archive-articles .article .info, .content #container .users .article .info {
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+/* line 553, css/src/style.scss */
+.content #container .articles .article .info a, .content #container .archive-articles .article .info a, .content #container .users .article .info a {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  color: #7479a8;
+  text-decoration: none;
+}
+/* line 557, css/src/style.scss */
+.content #container .articles .article .info a:hover, .content #container .archive-articles .article .info a:hover, .content #container .users .article .info a:hover, .content #container .articles .article .info .author:hover, .content #container .archive-articles .articles .article .info .author:hover, .content #container .articles .archive-articles .article .info .author:hover, .content #container .users .articles .article .info .author:hover, .content #container .articles .users .article .info .author:hover, .content #container .articles .archive-articles .article .info .author:hover, .content #container .archive-articles .articles .article .info .author:hover, .content #container .archive-articles .article .info .author:hover, .content #container .users .archive-articles .article .info .author:hover, .content #container .archive-articles .users .article .info .author:hover, .content #container .articles .users .article .info .author:hover, .content #container .users .articles .article .info .author:hover, .content #container .archive-articles .users .article .info .author:hover, .content #container .users .archive-articles .article .info .author:hover, .content #container .users .article .info .author:hover {
+  color: #1d1d1d;
+}
+/* line 559, css/src/style.scss */
+.content #container .articles .article .info .author, .content #container .archive-articles .article .info .author, .content #container .users .article .info .author {
+  float: right;
+}
+/* line 561, css/src/style.scss */
+.content #container .articles .article .info .author img, .content #container .archive-articles .article .info .author img, .content #container .users .article .info .author img {
+  padding-left: 0.5em;
+}
+/* line 565, css/src/style.scss */
+.content #container .articles .article .text, .content #container .archive-articles .article .text, .content #container .users .article .text {
+  margin-bottom: 0.5em;
+}
+/* line 567, css/src/style.scss */
+.content #container .articles .article .text .more-link, .content #container .archive-articles .article .text .more-link, .content #container .users .article .text .more-link {
+  text-indent: 0em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  float: right;
+  color: white;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+/* line 570, css/src/style.scss */
+.content #container .articles .article .text .more-link:hover, .content #container .archive-articles .article .text .more-link:hover, .content #container .users .article .text .more-link:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  float: right;
+}
+/* line 578, css/src/style.scss */
+.content #container .articles .article .tags, .content #container .archive-articles .article .tags, .content #container .users .article .tags {
+  margin-top: -10px;
+  color: white;
+}
+/* line 581, css/src/style.scss */
+.content #container .articles .article .tags a, .content #container .archive-articles .article .tags a, .content #container .users .article .tags a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #ececec;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  float: left;
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 0.6em;
+  margin-right: 0.5em;
+}
+/* line 587, css/src/style.scss */
+.content #container .articles .article .tags a:hover, .content #container .archive-articles .article .tags a:hover, .content #container .users .article .tags a:hover, .content #container .articles .article .tags .info .author:hover, .content #container .articles .article .info .tags .author:hover, .content #container .archive-articles .articles .article .tags .info .author:hover, .content #container .articles .archive-articles .article .tags .info .author:hover, .content #container .archive-articles .articles .article .info .tags .author:hover, .content #container .articles .archive-articles .article .info .tags .author:hover, .content #container .users .articles .article .tags .info .author:hover, .content #container .articles .users .article .tags .info .author:hover, .content #container .users .articles .article .info .tags .author:hover, .content #container .articles .users .article .info .tags .author:hover, .content #container .articles .archive-articles .article .tags .info .author:hover, .content #container .archive-articles .articles .article .tags .info .author:hover, .content #container .articles .archive-articles .article .info .tags .author:hover, .content #container .archive-articles .articles .article .info .tags .author:hover, .content #container .archive-articles .article .tags .info .author:hover, .content #container .archive-articles .article .info .tags .author:hover, .content #container .users .archive-articles .article .tags .info .author:hover, .content #container .archive-articles .users .article .tags .info .author:hover, .content #container .users .archive-articles .article .info .tags .author:hover, .content #container .archive-articles .users .article .info .tags .author:hover, .content #container .articles .users .article .tags .info .author:hover, .content #container .users .articles .article .tags .info .author:hover, .content #container .articles .users .article .info .tags .author:hover, .content #container .users .articles .article .info .tags .author:hover, .content #container .archive-articles .users .article .tags .info .author:hover, .content #container .users .archive-articles .article .tags .info .author:hover, .content #container .archive-articles .users .article .info .tags .author:hover, .content #container .users .archive-articles .article .info .tags .author:hover, .content #container .users .article .tags .info .author:hover, .content #container .users .article .info .tags .author:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #ececec;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  float: left;
+}
+/* line 592, css/src/style.scss */
+.content #container .office, .content #container .users .user {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
+  padding-right: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ececec;
+  -moz-box-shadow: #dddddd 0px 0px 10px 0;
+  -webkit-box-shadow: #dddddd 0px 0px 10px 0;
+  -o-box-shadow: #dddddd 0px 0px 10px 0;
+  box-shadow: #dddddd 0px 0px 10px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 2em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .office, * html .content #container .users .user {
+  overflow-x: hidden;
+}
+/* line 601, css/src/style.scss */
+.content #container .office h3, .content #container .users .user h3 {
+  font-family: Georgia, serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+/* line 606, css/src/style.scss */
+.content #container .office .right, .content #container .users .user .right {
+  float: right;
+}
+/* line 607, css/src/style.scss */
+.content #container .office p, .content #container .users .user p {
+  text-indent: 0em;
+}
+/* line 609, css/src/style.scss */
+.content #container .prague {
+  background-image: url("img/prague-light.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 616, css/src/style.scss */
+.content #container .hradec {
+  background-image: url("img/hradec-light.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 623, css/src/style.scss */
+.content #container .ostrava {
+  background-image: url("img/ostrava-light.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 630, css/src/style.scss */
+.content #container .phone {
+  background-image: url("img/phone-light.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 639, css/src/style.scss */
+.content #container .archive-articles, .content #container .users {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+  padding-right: 40px;
+  margin-bottom: 1em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .archive-articles, * html .content #container .users {
+  overflow-x: hidden;
+}
+/* line 645, css/src/style.scss */
+.content #container .archive-articles .article, .content #container .users .article {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .archive-articles .article, * html .content #container .users .article {
+  overflow-x: hidden;
+}
+/* line 650, css/src/style.scss */
+.content #container .users {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  padding-right: 0px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .users {
+  overflow-x: hidden;
+}
+/* line 654, css/src/style.scss */
+.content #container .users .user {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  -moz-box-shadow: white 0px 0px 5px 0;
+  -webkit-box-shadow: white 0px 0px 5px 0;
+  -o-box-shadow: white 0px 0px 5px 0;
+  box-shadow: white 0px 0px 5px 0;
+  float: left;
+  margin-top: 0em;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .users .user {
+  overflow-x: hidden;
+}
+/* line 660, css/src/style.scss */
+.content #container .users .user h3 {
+  font-size: 1.2em;
+}
+/* line 663, css/src/style.scss */
+.content #container .users .user .about {
+  color: #666666;
+  font-family: Georgia, "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 667, css/src/style.scss */
+.content #container .users .line {
+  float: left;
+}
+/* line 669, css/src/style.scss */
+.content #container .prev-next {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+  display: inline;
+  float: right;
+  position: relative;
+  margin: 0 400px 1.5em -400px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .prev-next {
+  overflow-x: hidden;
+}
+/* line 672, css/src/style.scss */
+.content #container .prev-next a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  float: left;
+  color: white;
+  text-decoration: none;
+  margin-right: 1em;
+}
+/* line 677, css/src/style.scss */
+.content #container .prev-next a:hover, .content #container .prev-next .articles .article .info .author:hover, .content #container .articles .article .info .prev-next .author:hover, .content #container .prev-next .archive-articles .article .info .author:hover, .content #container .archive-articles .article .info .prev-next .author:hover, .content #container .prev-next .users .article .info .author:hover, .content #container .users .article .info .prev-next .author:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  line-height: 0.1em;
+  padding: 1em 1em 0.8em 1em;
+  text-transform: uppercase;
+  background-color: #97151c;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  float: left;
+  -moz-box-shadow: #999999 0px 0px 5px 0;
+  -webkit-box-shadow: #999999 0px 0px 5px 0;
+  -o-box-shadow: #999999 0px 0px 5px 0;
+  box-shadow: #999999 0px 0px 5px 0;
+}
+/* line 684, css/src/style.scss */
+.content #container .side-bar {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .side-bar {
+  overflow-x: hidden;
+}
+/* line 687, css/src/style.scss */
+.content #container .side-bar .section-name {
+  margin-bottom: 0.5em;
+}
+/* line 690, css/src/style.scss */
+.content #container .side-bar .border {
+  border: 1px solid #ececec;
+  background-color: #f9f9f9;
+  float: right;
+  padding: 1em 2.1em;
+  margin-top: 1em;
+}
+/* line 697, css/src/style.scss */
+.content #container .side-bar ul {
+  list-style-type: square;
+  padding: 0em 1.5em;
+}
+/* line 700, css/src/style.scss */
+.content #container .side-bar ul li {
+  padding: 0.3em 0em;
+}
+/* line 703, css/src/style.scss */
+.content #container .side-bar ul a {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 710, css/src/style.scss */
+.content #container .numbers {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+  padding: 10px;
+  padding-bottom: 1.5em;
+  width: 250px;
+  background-color: #dbdbdb;
+  text-align: center;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content #container .numbers {
+  overflow-x: hidden;
+}
+/* line 718, css/src/style.scss */
+.content #container .numbers .section-name {
+  text-shadow: white 1px 1px 1px;
+  margin-bottom: 5px;
+}
+/* line 722, css/src/style.scss */
+.content #container .numbers hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  background-color: #bebebe;
+  height: 1px;
+  border-bottom: 1px solid white;
+  margin-bottom: 1em;
+}
+/* line 729, css/src/style.scss */
+.content #container .numbers .employees {
+  float: left;
+  margin-left: 1em;
+}
+/* line 733, css/src/style.scss */
+.content #container .numbers .customers {
+  float: right;
+  margin-right: 1em;
+}
+/* line 737, css/src/style.scss */
+.content #container .numbers span.number {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 2px;
+  font-size: 4em;
+  color: white;
+  padding: 3px;
+  background-color: #202020;
+  background-image: url("img/number-background.gif");
+  background-repeat: repeat-x;
+  background-position: 0px center;
+}
+/* line 750, css/src/style.scss */
+.content #container .numbers span.number-info {
+  text-transform: uppercase;
+}
+
+/*footer stripe with contact address*/
+/* line 757, css/src/style.scss */
+.footer {
+  border-top: 10px solid #efefef;
+  background-color: #2a2a2a;
+  padding-top: 2em;
+  text-shadow: black 1px 1px 1px;
+}
+/* line 762, css/src/style.scss */
+.footer #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 764, css/src/style.scss */
+.footer #container .section-name {
+  color: #eaeaea;
+  margin-bottom: 0.5em;
+}
+/* line 767, css/src/style.scss */
+.footer #container .section-name .red {
+  color: #97151c;
+}
+/* line 769, css/src/style.scss */
+.footer #container hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  height: 1px;
+  background-color: #222222;
+  border-bottom: 1px solid #353535;
+  margin-bottom: 2em;
+}
+/* line 777, css/src/style.scss */
+.footer #container .address span.town {
+  font-weight: bold;
+  color: #d4d4d4;
+}
+/* line 781, css/src/style.scss */
+.footer #container .address span.addr {
+  color: #aaaaaa;
+}
+/* line 783, css/src/style.scss */
+.footer #container .prague {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  padding-left: 120px;
+  padding-bottom: 40px;
+  background-image: url("img/prague.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .footer #container .prague {
+  overflow-x: hidden;
+}
+/* line 793, css/src/style.scss */
+.footer #container .hradec {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  padding-left: 120px;
+  padding-bottom: 40px;
+  background-image: url("img/hradec.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .footer #container .hradec {
+  overflow-x: hidden;
+}
+/* line 803, css/src/style.scss */
+.footer #container .ostrava {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+  padding-left: 120px;
+  padding-bottom: 40px;
+  background-image: url("img/ostrava.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* line 138, ../../../../../../../Users/janfabian/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .footer #container .ostrava {
+  overflow-x: hidden;
+}
+
+/* line 816, css/src/style.scss */
+.bottom-copyright {
+  background-color: #222;
+  color: #555;
+  padding: 0.5em 0em;
+  font-weight: bold;
+  text-shadow: black 1px 1px 1px;
+}
+/* line 822, css/src/style.scss */
+.bottom-copyright #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}

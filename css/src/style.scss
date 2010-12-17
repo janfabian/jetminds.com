@@ -1,0 +1,828 @@
+/*
+Theme Name: We are JetMinds!
+Description: Template for new JetMinds blog
+Author: Jan Fabian
+Version: 1.0
+*
+
+*
+*/
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// 960 grid template
+@import "blueprint/grid";
+
+@import "compass/css3";
+
+// fancy-type
+@import "blueprint/fancy-type";
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+//class variables
+$standart-font-size: 0.9em;
+$vertical-menu-width: 6;
+$image-folder: "img/";
+$jetminds-red: #97151c;
+$dark-jetminds-red-border: #84151b;
+$darker-red: #4d0106;
+$jetminds-gray: #1d1d1d;
+$light-gray: #ececec;
+$photo-frame-gray: #dbdbdb;
+$link-light-purple: #7479a8;
+
+//mixins
+@mixin vertical-menu-prepend($columnPreppend:$blueprint-grid-columns - $vertical-menu-width) {
+	@include column($columnPreppend);
+}
+@mixin vertical-menu-allignment($columnWidth: $vertical-menu-width) {
+	@include column($columnWidth, yes);
+}
+@mixin rounded-button($color: $jetminds-red, $opacity: 1, $float: right) {
+	@include border-radius;
+	@include transition;
+	line-height:0.1em;
+	padding: 1em 1em 0.8em 1em;
+	text-transform: uppercase;
+	background-color:$color;
+	@include opacity($opacity);
+	float: $float;
+}
+
+//classes to be extended
+.headline {
+	color: $jetminds-red;
+	text-decoration:none;
+	&:hover{
+		color: $darker-red;
+	}
+}
+
+.white-board-font {
+	font-family: 'Reenie Beanie', serif;
+  font-style: normal;
+  text-shadow: none;
+  text-decoration: none;
+  line-height: 1.11em;
+}
+
+img#wpstats{display:none}
+
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+	font-size: $standart-font-size;
+	background-color:#222;
+}
+
+/*top red gradient*/
+.red-gradient {
+	background-image: url($image-folder+"red-gradient.gif");
+	background-repeat: repeat-x;
+	#container{
+		@include container;
+		height: 10px;
+		.vertical-menu-prepend{
+			@include vertical-menu-prepend();
+			height: 10px;
+		}
+		.vertical-menu{
+			@include vertical-menu-allignment();
+			height: 10px;
+			background-color:#111;
+		}
+	}
+}
+
+/*white stripe with logo*/
+.white-stripe {
+	background-color:#FFF;
+	#container {
+		@include container;
+		$logo-width: 10;
+		.logo {
+			@include column($logo-width);
+			a {
+				text-decoration:none;
+			}
+			img {
+				float: left;
+				margin-right: 25px;
+			}
+			padding: 20px 0px 10px 0px;
+			font: {
+				family: "Trebuchet MS";
+				size: 3em;
+			}
+			line-height:2.4em;
+			.red { color: $jetminds-red; }
+			.gray{ color: $jetminds-gray; }
+		}
+		.vertical-menu-prepend{
+			@include vertical-menu-prepend($blueprint-grid-columns - $logo-width - $vertical-menu-width);
+			height: 1px;
+		}
+		.vertical-menu{
+			@include vertical-menu-allignment();
+			background-color:#1e1e1e;
+			ul {
+				float: left;
+				list-style-type: none;
+				padding: 0.5em 1.4em;
+				margin: 0em 0em 0.5em 0em;
+				@include text-shadow(black);
+				text-transform:uppercase;
+				li {
+					padding: 0.3em 0em;
+					a {
+						@include blueprint-reset;
+						@include transition;
+						color: #a3a3a3;
+						text-decoration: none;
+						&:hover {
+							color: white;
+							@include text-shadow(#333, 0px, 0px, 2px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*red stripe with quotation about JetMinds*/
+.red-stripe {
+	background-color:$jetminds-red;
+	border-bottom: {
+		width: 11px;
+		color: $dark-jetminds-red-border;
+		style: solid;
+	}
+	#container {
+		@include container;
+		padding-bottom: 0.5em;
+		.vertical-menu-prepend{
+			@include vertical-menu-prepend();
+			height: 1px;
+		}
+		.vertical-menu{
+			@include vertical-menu-allignment();
+			background-image:url($image-folder+"vertical-menu-bottom.png");
+			background-repeat:no-repeat;
+			height: 32px;
+		}
+		h2.quotation {
+			font: {
+				size: 2.3em;
+			}
+			@include text-shadow($darker-red,0px,0px,5px);
+			line-height:1em;
+			margin-bottom: 0.5em;
+			color: white
+		}
+		h2.headline-title {
+			@extend h2.quotation;
+			font-size: 1.5em;
+			margin-bottom:0.1em;
+			a {
+				color: white;
+				text-decoration:none;
+			}
+		}
+		span.author-of-quotation {
+			font: {
+				size: 1.4em;
+				style: italic;
+			};
+			color: $darker-red;
+		}
+	}
+}
+
+/*gray stripe with featured article and photos from JetMinds life*/
+.gray-stripe {
+	background-color: $light-gray;
+	padding: 20px 0px;
+	#container {
+		@include container;
+		$featured-width: 11;
+		$photos-width: 24 - $featured-width - 2;
+		.featured-article {
+			@include column($featured-width, yes);
+			@include append(1);
+			background:{
+				image:url($image-folder+'vertical-border.gif');
+				repeat: repeat-y;
+				position: top right;
+			}
+			h3{font-size: 1em;margin:0px;}
+			.headline {
+				@extend .headline;
+				text-decoration:underline;
+				font-size: 1.5em;
+			}
+			.alt {
+				font-size: 0.8em;
+				font-weight:bold;
+				a{
+					color: $link-light-purple;
+					@include transition;
+					text-decoration:none;
+					&:hover {color:$jetminds-gray;}
+				}
+				.author {
+					float:right;
+				}
+			}
+			.text {
+				text-align: justify;
+				text-indent: 2em;
+				p{margin-bottom:1em;}
+				.more-link {
+					text-indent:0em;
+					@include rounded-button($jetminds-red, 0.5);
+					&:hover {
+						@include rounded-button($jetminds-red, 1);
+					}
+					color: white;
+					font-size: 0.7em;
+					text-decoration:none;
+				}
+			}
+		}
+		.photos-of-jetminds {
+			@include column($photos-width);
+			padding: 5px 5px 0px #{$blueprint-grid-width - 5px + $blueprint-grid-margin};
+			.photo-frame{
+				$padding: 10px;
+				width:($photos-width * ($blueprint-grid-width + $blueprint-grid-margin)) - (2 * $padding);
+				padding: $padding;
+				margin-bottom:0.8em;
+				background-color:#FFF;
+				@include box-shadow($default-box-shadow-color, 0px, 5px);
+				@include border-radius;
+				.photo-name {
+					@extend .white-board-font;
+					margin-top:0.3em;
+					text-transform:uppercase;
+					font-size: 1.5em;
+					font-weight:bold;
+					color: $jetminds-gray;
+				}
+				.photo{
+					line-height:0px;
+					height: 250px;
+					overflow: hidden;
+					.hidden{
+						display: none;
+					}
+					.text {
+						position: absolute;
+						margin-top:-8em;
+						padding:1em 10px 0em 10px;
+						background-image:url($image-folder + 'black-dot.png');
+						height: 1.2em;
+						width: 400px;
+						color: white;
+						@include text-shadow(black);
+					}
+					img {
+						margin-top: 0em;
+						margin-left: -3em;
+					}
+				}
+			}
+			.switchers {
+				$a: 13px;
+				$margin-a: $a/2;
+				margin-top: 10px;
+				margin-right: -10px - $margin-a;
+				.switch {
+					@include transition;
+					$a: 13px;
+					width: $a;
+					height: $a;
+					background-color:$photo-frame-gray;
+					float: right;
+					margin-right: $margin-a;
+					&:hover {
+						background-color:$jetminds-gray;
+					}
+					&:last{
+						margin-right: 0px;
+					}
+				}
+				.active{
+					background-color:$jetminds-gray;
+				}
+			}
+		}
+	}
+}
+
+/*gray stripe with information about article*/
+.info-gray-stripe {
+	@include alt;
+	background-color: $light-gray;
+	padding: 0.5em;
+	#container{
+		@include container;
+		.info{
+			a {
+				@extend .headline;
+			}
+		}
+	}
+}
+
+/*stripe with content - i.e. projects, recent articles, JetMinds in numbers*/
+.content {
+	background-color:#FFF;
+	.section-name {
+		color: #6a6a6a;
+		text-transform:uppercase;
+	}
+	padding: 0.5em 0em 5em 0em;
+	#container {
+		@include container;
+		.product {
+			@include column(7);
+			@include append(1);
+			margin-right: 30px;
+			margin-bottom: 50px;
+			&[last]{
+				@include column(7, yes);
+				@include append(0);
+			}
+			.product-name {
+				@extend .headline;
+				text-decoration:none;
+				font-size: 1.4em;
+			}
+			.image {
+				line-height:0px;
+				padding:10px;
+				overflow:hidden;
+				background-color:$photo-frame-gray;
+			}
+			.text {
+				font-size: 0.8em;
+			}
+		}
+		//block with all articles
+		$article-width: 15;
+		
+		.current-article {
+			@include column($article-width);
+			@include append(0);
+			p {
+				text-indent: 2em;
+			}
+			.quotation {
+				@include alt;
+				padding: 1em 3em;
+				margin: 1em 0em;
+				background: {
+					image: url($image-folder + "quotation.png");
+					repeat: no-repeat;
+				}
+			}
+			img {
+				@include transition;
+				margin-right: 1em;
+				&:hover{@include box-shadow}
+			}
+			.important {
+				text-align:justify;
+				margin: 1em 0.5em;
+				padding: 1.5em 2em;
+				font-weight:bold;
+				@include linear-gradient(color-stops(#fff4ac, #ffee80));
+				@include box-shadow(#dedede, 0px, 5px);
+			}
+			.code {
+				margin: 5em;
+			}
+			h1, h2, h3, h4, h5 {
+				font-size:1.3em;
+			}
+			ul{
+				li{
+					margin-bottom:0.5em;
+				}
+			}
+			.about-the-author {
+				@include column($article-width);
+				margin-top:3em;
+				margin-bottom:1em;
+				border-bottom: 1px solid $photo-frame-gray;
+				border-top: 1px solid $photo-frame-gray;
+				background-color:#f6f6f6;
+				padding: 1em;
+				.section-name {
+					font-size:1.2em;
+					margin-bottom:0.8em;
+				}
+				.icon {
+					@include column(3);
+				}
+				.text {
+					@include alt;
+					@include column($article-width - 3, yes);
+					text-align:justify;
+					h4 {margin-bottom:0.5em;}
+				}
+				.more-from-author {
+					margin-top: 1em;
+					margin-bottom:0px;
+					padding: 0px;
+					list-style-type:none;
+					a {
+						@include blueprint-reset;
+						@extend .headline;
+						font-size:0.8em;
+					}
+				}
+			}
+			.section-name {font-size:1.2em;}
+			ul{
+				li{
+					.article-title{
+						@extend .headline;
+					}
+				}	
+			}
+		}
+		.right-menubar {
+			$menubarwidth: ($blueprint-grid-columns - $article-width);
+			@include column($menubarwidth - 1, yes);
+			@include prepend(1);
+			.table-border{
+				float: right;
+				@include border-radius(10px);
+				background-color:$light-gray;
+				padding: 7px;
+				.white-table {
+					float: right;
+					@extend .white-board-font;
+					@include box-shadow(#cecece, $default-box-shadow-h-offset, $default-box-shadow-v-offset, $default-box-shadow-blur, $default-box-shadow-spread, inset);
+					@include border-radius(5px);
+					border: 1px solid #d9d9d9;
+					background-color:#FFF;
+					font-size: 2em;
+					padding: 0.5em;
+					background: {
+						image: url($image-folder + "whiteboard.png");
+						position: bottom right;
+						repeat: no-repeat;
+					}
+					ul {
+						padding: 0em 0.4em;
+						list-style-type:none;
+					}
+					
+					a{
+						@include transition;
+						text-decoration:none;
+						color: #000099;
+						&:hover{color: $jetminds-red;}
+					}
+					h3 {
+						@extend .white-board-font;
+					  text-transform: uppercase;
+						margin-bottom:0.2em;
+						font-size:1em;
+					}
+					.category {
+						@include column((($menubarwidth)/2) - 1, yes);
+					}
+					.tags {
+						@include column((($menubarwidth)/2) - 1, yes);
+					}
+				}
+			}
+		}
+		
+		.articles {		
+			@include column($article-width);
+			@include append(1);
+			// each article
+			.article {
+				@include column($article-width - 1);
+				@include prepend(1);
+				padding-bottom: 0.4em;
+				margin-bottom:1em;
+				border-bottom: 1px solid $photo-frame-gray;
+				background: {
+					image: url($image-folder + "star.png");
+					repeat: no-repeat;
+					position: 0em 0.4em;
+				}
+				.title {
+					h3{
+						font-size: 1em;
+						margin-bottom:0.3em;
+						margin-top: 0.2em;
+					}
+					a {
+						@extend .headline;
+						font-size:1.2em;
+						&:hover{text-decoration:underline;}
+					}
+				}
+				.info {
+					font-size:0.8em;
+					margin-bottom:0.2em;
+					font-weight:bold;
+					a {
+						@include transition;
+						color: $link-light-purple;
+						text-decoration:none;
+						&:hover{color: $jetminds-gray;}
+					}
+					.author {
+						float: right;
+						img {padding-left: 0.5em;}
+						&:hover{@extend a:hover;}
+					}
+				}
+				.text {
+					margin-bottom:0.5em;
+					.more-link {
+						text-indent:0em;
+						@include rounded-button($jetminds-red, 0.5);
+						&:hover {
+							@include rounded-button($jetminds-red, 1);
+						}
+						color: white;
+						font-size: 0.7em;
+						text-decoration:none;
+					}
+				}
+				.tags {
+					margin-top: -10px;
+					color: white;
+					a {
+						@include rounded-button($light-gray, 0.5, left);
+						color: $jetminds-gray;
+						text-decoration:none;
+						font-size:0.6em;
+						margin-right: 0.5em;
+						&:hover {@include rounded-button($light-gray, 1, left);}						
+					}
+				}
+			}
+		}
+		.office {
+				@include column($article-width - 1);
+				@include append(1);
+				background-color:#f9f9f9;
+				border: 1px solid $light-gray;
+				@include box-shadow(#dddddd,0px,0px,10px);
+				@include border-radius;
+				margin: 1em;
+				padding: 2em;
+				h3{
+					font-family: Georgia, serif;
+					font-size:2em;
+					margin-bottom:0.5em;
+				}
+				.right{float:right;}
+				p{text-indent:0em;}
+		}
+		.prague {
+			background: {
+				image:url($image-folder + "prague-light.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		.hradec {
+			background: {
+				image:url($image-folder + "hradec-light.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		.ostrava {
+			background: {
+				image:url($image-folder + "ostrava-light.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		.phone {
+			background: {
+				image:url($image-folder + "phone-light.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		
+		$article-width: 16;
+		.archive-articles {
+			@extend .articles;
+			$max-width: $blueprint-grid-columns;
+			@include column($article-width);
+			@include append(1);
+			margin-bottom:1em;
+			.article {
+				@include column($article-width,yes);
+			}
+		}
+		
+		.users {
+			@extend .archive-articles;
+			@include column($blueprint-grid-columns, yes);
+			@include append(0);
+			.user {
+				@extend .office;
+				@include column(4);
+				@include box-shadow(white);
+				float: left;
+				margin-top: 0em;
+				h3 {
+					font-size:1.2em;
+				}
+				.about {
+					@include alt;
+				}
+			}
+			.line {float:left;}
+		}
+		.prev-next {
+			@include column(9);
+			@include push(-10);
+			a {
+				@include rounded-button($jetminds-red, 0.6, left);
+				color: white;
+				text-decoration:none;
+				margin-right: 1em;
+				&:hover{
+					@include rounded-button($jetminds-red, 1, left);
+					@include box-shadow;
+				}
+			}
+		}
+
+		.side-bar {
+			@include column($blueprint-grid-columns - $article-width - 2,yes);
+			@include prepend(1);
+			.section-name {
+				margin-bottom:0.5em;
+			}
+			.border {
+				border: 1px solid $light-gray;
+				background-color:#f9f9f9;
+				float: right;
+				padding: 1em 2.1em;
+				margin-top:1em;
+			}
+			ul {
+				list-style-type:square;
+				padding: 0em 1.5em;
+				li {
+					padding: 0.3em 0em;
+				}
+				a {
+					@extend .headline;
+					@include transition;
+				}
+			}
+		}
+
+		.numbers {
+			@include column($blueprint-grid-columns - $article-width - 1, yes);
+			$padding: 10px;
+			padding: 10px;
+			padding-bottom: 1.5em;
+			width: ($blueprint-grid-columns - $article-width - 1) * ($blueprint-grid-width + $blueprint-grid-margin) - $blueprint-grid-margin - 2 * $padding;
+			background-color:$photo-frame-gray;
+			text-align:center;
+			.section-name {
+				@include text-shadow(white);
+				margin-bottom: 5px;
+			}
+			hr {
+				@include blueprint-reset;
+				background-color:#bebebe;
+				height: 1px;
+				border-bottom: 1px solid white;
+				margin-bottom: 1em;
+			}
+			.employees{
+				float:left; 
+				margin-left: 1em;
+			}
+			.customers{
+				float:right;
+				margin-right: 1em;
+			}
+			span.number {
+				@include border-radius;
+				margin-right: 2px;
+				font-size:4em;
+				color: white;
+				padding: 3px;
+				background: {
+					color:#202020;
+					image:url($image-folder + "number-background.gif");
+					repeat: repeat-x;
+					position: 0px center;
+				}
+			}
+			span.number-info{text-transform:uppercase;}
+		}
+
+	}
+}
+
+/*footer stripe with contact address*/
+.footer {
+	border-top: 10px solid #efefef;
+	background-color:#2a2a2a;
+	padding-top: 2em;
+	@include text-shadow(black);
+	#container{
+		@include container;
+		.section-name {
+			color: #eaeaea;
+			margin-bottom: 0.5em;
+			.red { color: $jetminds-red; }
+		}
+		hr {
+			@include blueprint-reset;
+			height: 1px;
+			background-color:#222222;
+			border-bottom:1px solid #353535;
+			margin-bottom: 2em;
+		}
+		.address {
+			span.town {
+				font-weight:bold;
+				color: #d4d4d4;
+			}
+			span.addr{ color: #aaaaaa; }
+		}
+		.prague {
+			@include column(5);
+			@include prepend(3);
+			padding-bottom: 40px;
+			background: {
+				image:url($image-folder + "prague.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		.hradec {
+			@include column(5);
+			@include prepend(3);
+			padding-bottom: 40px;
+			background: {
+				image:url($image-folder + "hradec.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+		.ostrava {
+			@include column(5, yes);
+			@include prepend(3);
+			padding-bottom: 40px;
+			background: {
+				image:url($image-folder + "ostrava.png");
+				repeat: no-repeat;
+				position: bottom left;
+			}
+		}
+	}
+}
+
+.bottom-copyright {
+	background-color:#222;
+	color: #555;
+	padding: 0.5em 0em;
+	font-weight:bold;
+	@include text-shadow(black);
+	#container{
+		@include container;
+	}
+}
+
+
+

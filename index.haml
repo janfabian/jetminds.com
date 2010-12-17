@@ -1,0 +1,199 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+	%head
+		%meta{ 'http-equiv' => "Content-Type", :content => "text/html", :charset => "UTF-8" }
+		%link{ :href => "css/stylesheets/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection"}
+		%title JetMinds
+		%script{:type => "text/javascript",
+		        :src  => "javascript/jquery-1.4.4.min.js"}
+	%body
+		/ red gradient stripe with 10px height
+		.red-gradient
+			#container
+				/ need to be set to prepend the dark grey menu stripe
+				.vertical-menu-prepend
+				.vertical-menu
+		/ white stripe with logo and middle part of menu
+		.white-stripe
+			#container 
+				.logo
+					%img{:src => "img/logo.png"}
+					%span.red Jet
+					%span.gray> Minds
+				.vertical-menu-prepend
+				.vertical-menu
+					%ul
+						%li 
+							%a{:href => "#"} HOME
+						%li 
+							%a{:href => "#"} ARTICLES
+						%li 
+							%a{:href => "#"} JOBS
+						%li 
+							%a{:href => "#"} PEOPLE
+						%li 
+							%a{:href => "#"} WORK
+					%ul
+						%li 
+							%a{:href => "#"} CONTACT
+						%li 
+							%a{:href => "#"} HISTORY
+						%li 
+							%a{:href => "#"} LINK
+		/ red stripe with quotation about JetMinds
+		.red-stripe
+			#container
+				.vertical-menu-prepend
+				.vertical-menu
+				%h2.quotation Jetminds are just great! They rock!
+				%span.author-of-quotation Happy Customer
+		/ gray stripe with featured article and photos from JetMinds life
+		.gray-stripe
+			#container
+				.featured-article
+					%a.headline{:href => "#"}
+						Succes story
+					.alt
+						1.12.2011 by Jiri Fabian
+					%img{:src => "img/featured-article-photo.jpg"}
+					.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ... 
+					%a.read-more{:href => "#"} read more
+				.photos-of-jetminds
+					.photo-frame
+						%img{:src => "img/camera.png", :alt => "camera icon"}
+						%span.photo-name Jetminds in pictures
+						.photo
+							%img{:src => "img/random-photo.jpg"}
+					.switchers
+						%a{:href => "#"}
+							.switch 
+						%a{:href => "#"}
+							.switch
+						%a{:href => "#"}
+							.switch
+		/ white content part with projects and articles
+		.content
+			#container
+				%h4.section-name current projects
+				.product
+					%a.product-name{:href => "#"} Bluelife
+					.image
+						%img{:src => "img/bluelife.png"}
+					.text Duis bibendum feugiat felis id vulputate. Mauris non nisi arcu, quis mollis magna.
+				.product{:middle => "true"}
+					%a.product-name{:href => "#"} JetMinds Studio
+					.image
+						%img{:src => "img/jetminds-studio.png"}
+					.text Duis bibendum feugiat felis id vulputate. Mauris non nisi arcu, quis mollis magna.
+				.product{:last => "true"}
+					%a.product-name{:href => "#"} PinYourPlace
+					.image
+						%img{:src => "img/pinyourplace.png"}
+					.text Duis bibendum feugiat felis id vulputate. Mauris non nisi arcu, quis mollis magna.
+				.articles
+					%h4.section-name recent articles
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+				.numbers
+					%h4.section-name jetminds in numbers
+					%hr
+					.customers
+						%span.number 6
+						%span.number> 1 
+						%br
+						%span.number-info CUSTOMERS
+					.employees
+						%span.number 4
+						%span.number> 5
+						%br
+						%span.number-info EMPLOYEES
+				
+		.footer
+			#container
+				%h4.section-name 
+					%span.red> Jet
+					Minds crews
+				%hr
+				%div{:class => "address prague"}
+					%span.town Prague
+					%span.addr 
+						%br 
+						Charkovská 24
+						%br 
+						101 00 Prague 10
+						%br 
+						Czech Republic
+				%div{:class => "address hradec"}
+					%span.town Hradec Králové
+					%span.addr 
+						%br 
+						Charkovská 24
+						%br 
+						101 00 Prague 10
+						%br 
+						Czech Republic
+				%div{:class => "address ostrava"}
+					%span.town Ostrava !!!
+					%span.addr 
+						%br 
+						Technologická 372/2
+						%br 
+						708 00 Ostrava-Pustkovec
+						%br 
+						Czech Republic
+		.bottom-copyright
+			#container
+				© 2010 JetMinds 
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				

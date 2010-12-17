@@ -1,0 +1,129 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+	%head
+		%meta{ 'http-equiv' => "Content-Type", :content => "text/html", :charset => "UTF-8" }
+		%link{ :href => "style.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection"}
+		%link{ :href => "http://fonts.googleapis.com/css?family=Reenie+Beanie:regular&subset=latin", :rel => "stylesheet", :type => "text/css"}
+		%title JetMinds
+		%script{:type => "text/javascript",
+		        :src  => "javascript/jquery-1.4.4.min.js"}
+	%body
+		/ red gradient stripe with 10px height
+		.red-gradient
+			#container
+				/ need to be set to prepend the dark grey menu stripe
+				.vertical-menu-prepend
+				.vertical-menu
+		/ white stripe with logo and middle part of menu
+		.white-stripe
+			#container
+				.logo
+					%img{:src => "img/logo.png"}
+					%span.red Jet
+					%span.gray> Minds
+				.vertical-menu-prepend
+				.vertical-menu
+					%ul
+						%li 
+							%a{:href => "#"} HOME
+						%li 
+							%a{:href => "#"} ARTICLES
+						%li 
+							%a{:href => "#"} JOBS
+						%li 
+							%a{:href => "#"} PEOPLE
+						%li 
+							%a{:href => "#"} WORK
+					%ul
+						%li 
+							%a{:href => "#"} CONTACT
+						%li 
+							%a{:href => "#"} HISTORY
+						%li 
+							%a{:href => "#"} LINK
+		/ red stripe with headline
+		.red-stripe
+			#container
+				.vertical-menu-prepend
+				.vertical-menu
+				%h2.headline-title Featured article about something
+		/ gray stripe with information about page
+		.info-gray-stripe
+			#container
+				.info 26.10.2010 by Jiri Kratochvil
+		/ white content part with projects and articles
+		.content
+			#container
+				.articles
+					%h4.section-name recent articles
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+					.article
+						.title
+							%a{:href => "#"} Maecenas pellentesque molestie commodo
+						.info
+							%span Category:
+							%a.category{:href => "#"} vendavo
+							%a.author{:href => "#"} 
+								Jiri Kratochvil
+								%img{:src => "img/custom-avatar.png"}>
+						.text 
+							Vestibulum sed nisi in dui sodales rutrum eget eget risus. Phasellus facilisis justo at eros rhoncus adipiscing egestas ante facilisis ...
+						.tags
+							%a{:href => "#"} scrum
+							%a{:href => "#"} agile
+				.side-bar
+					%h4.section-name categories
+					%ul
+						%li
+							%a{:href => "#"} scrum
+						%li
+							%a{:href => "#"} featured
+						%li
+							%a{:href => "#"} agile
+				.prev-next 
+					%a{:href => "#"} prev
+					%a{:href => "#"} next
+		.footer
+			#container
+		.bottom-copyright
+			#container
+				© 2010 JetMinds 
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
